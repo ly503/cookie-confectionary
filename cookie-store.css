@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+}
+
+
+/*@font-face {
+    font-family: 'amaticbold';
+    src: url('amatic-bold-webfont.woff2') format('woff2'),
+         url('amatic-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+@font-face {
+    font-family: 'icecream';
+    src: url('icecream-regular-webfont.woff2') format('woff2'),
+         url('icecream-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	font-family: 'icecream';
+    color: #52BDEB;
+	background-color: #fffab1;
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 5px;
+}
+
+p {
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+
+}
+
+img:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+input {
+    width: 25px;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.cookie-column {
+    width: 33%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.reset {
+    width: 80px;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #52BDEB;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.reset:hover {
+    opacity: .8;
+    cursor: pointer;
+}
