@@ -6,6 +6,18 @@ $(document).ready(function() {
 	$(".lemon-counter").val(0);
 	$(".sugar-counter").val(0);
 
+	if (!Cookies.get("chocolate")) {
+		Cookies.set("chocolate", 0);
+	}
+
+	if (!Cookies.get("lemon")) {
+		Cookies.set("lemon", 0);
+	}
+
+	if (!Cookies.get("sugar")) {
+		Cookies.set("sugar", 0);
+	}
+
 
 	$("img").click(function() {
 
@@ -15,11 +27,8 @@ $(document).ready(function() {
 			var numChocCookies = Cookies.get("chocolate");
 				if (numChocCookies) {
 					Cookies.set("chocolate", (parseInt(numChocCookies) + 1));
+					numChocCookies = Cookies("chocolate");
 					$(".choc-counter").val(numChocCookies);
-				}
-
-				else {
-					Cookies.set("chocolate", 0);
 				}
 		}
 
@@ -28,10 +37,8 @@ $(document).ready(function() {
 			var numLemonCookies = Cookies.get("lemon");
 				if (numLemonCookies) {
 					Cookies.set("lemon", (parseInt(numLemonCookies) + 1));
+					numLemonCookies = Cookies("lemon");
 					$(".lemon-counter").val(numLemonCookies);
-				}
-				else {
-					Cookies.set("lemon", 0);
 				}
 		}
 
@@ -40,12 +47,9 @@ $(document).ready(function() {
 			var numSugarCookies = Cookies.get("sugar");
 				if (numSugarCookies) {
 					Cookies.set("sugar", (parseInt(numSugarCookies) + 1));
+					numSugarCookies = Cookies("sugar");
 					$(".sugar-counter").val(numSugarCookies);
 				}
-				else {
-					Cookies.set("sugar", 0);
-				}
-
 		}
 
 
